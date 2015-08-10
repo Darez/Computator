@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <resource pattern="\/css\/(.*)" expire="0" path="/css/{1}" />
+    <resource pattern="\/js\/(.*)" expire="0" path="/js/{1}" />
+    <resource pattern="\/font\/(.*)" expire="0" path="/font/{1}" />
+    <resource pattern="\/img\/(.*)" expire="0" path="/img/{1}" />
+    <resource pattern="\/font-awesome\/(.*)" expire="0" path="/font-awesome/{1}" />
+    <resource pattern="\/uploaded\/device\/photo\/(.*)" expire="0" path="/uploaded/device/photo/{1}" />
+	<resource pattern="\/favicon.ico" expire="9999999" path="/favicon.ico" />
+</content>

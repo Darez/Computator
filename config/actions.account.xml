@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<action controller="Account" method="index">
+		<route pattern="^\/account$"/>
+		<authenticate redirect="/login" />
+		<presenter class="Library\Twig\Presenter\Twig"/>
+
+	</action>
+
+	<action controller="Account" method="add">
+		<route pattern="^\/account\/add$"/>
+		<authenticate redirect="/login" />
+		<presenter class="Library\Twig\Presenter\Twig"/>
+	</action>
+
+	<action controller="Account" method="edit">
+		<route pattern="^\/account\/edit\/([0-9]+)$"/>
+		<authenticate redirect="/login" />
+		<presenter class="Library\Twig\Presenter\Twig"/>
+		<argument storage="url" name="id" pattern="^\/account\/edit\/([0-9]+)$" mapper="Mapper\Account"/>
+	</action>
+	
+</content>
